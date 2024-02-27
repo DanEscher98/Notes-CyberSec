@@ -1,0 +1,67 @@
+%PDF-1.7
+1 0 obj
+<<
+  /Type /Catalog  % Catalog object: the root of the document
+  /Pages 2 0 R    % References the Pages object (Object 2)
+>>
+endobj
+
+2 0 obj
+<<
+  /Type /Pages    % Pages object: the collection of pages
+  /Count 1        % Total number of pages in the document
+  /Kids [3 0 R]   % Array of references to page objects (Object 3)
+>>
+endobj
+
+3 0 obj
+<<
+  /Type /Page     % Page object: a single page
+  /Parent 2 0 R   % References the parent Pages object (Object 2)
+  /Resources <<   % Resource dictionary containing page resources
+    /Font <<      % Font resources used in the page
+      /F1 4 0 R   % Font object (Object 4)
+    >>
+  >>
+  /Contents 5 0 R % References the Content stream object (Object 5)
+>>
+endobj
+
+4 0 obj
+<<
+  /Type /Font     % Font object that defines the font properties
+  /Subtype /Type1 % Font subtype
+  /BaseFont /Iosevka  % Base font name (Iosevka in this case)
+>>
+endobj
+
+5 0 obj
+<<
+  /Length 42     % Length of the content stream in bytes
+>>
+stream           % Beginning of the content stream
+BT               % Begin text block
+/F1 12 Tf       % Set font F1 with size 12
+10 10 Td        % Set text position to (10, 10)
+(Hello, World!) Tj  % Show the text "Hello, World!"
+ET               % End text block
+endstream        % End of the content stream
+endobj
+
+xref             % Cross-reference table
+0 6              % Number of entries in the table
+0000000000 65535 f  % Free object
+0000000009 00000 n  % Object 1 offset and generation number
+0000000077 00000 n  % Object 2 offset and generation number
+0000000135 00000 n  % Object 3 offset and generation number
+0000000189 00000 n  % Object 4 offset and generation number
+0000000243 00000 n  % Object 5 offset and generation number
+
+trailer          % Trailer dictionary
+<<
+  /Size 6        % Number of entries in the cross-reference table
+  /Root 1 0 R   % Catalog object reference (Object 1)
+>>
+startxref        % Offset of the cross-reference table
+273              % Offset value
+%%EOF            % End of file marker
